@@ -1,0 +1,1501 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+header .menu .lista {
+  display: flex;
+  align-items: center;
+}
+
+header .menu img {
+  border-radius: 50%;
+}
+
+header .menu .lista nav ul {
+  display: flex;
+}
+
+header .menu .lista nav ul li {
+  margin: 0 20px;
+}
+
+header .menu .lista nav ul li a {
+  color: #a8a1a5;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+header .menu .lista nav ul li :hover {
+  color: #e2d2b0;
+}
+
+header .menu .lista nav ul li .active {
+  color:#26ab9e;
+  text-decoration: underline;
+  font-weight:bolder;
+}
+
+header .menu .boton {
+  margin-top: 35px;
+}
+
+header .menu .boton a {
+  background: #0b5850;
+  color: #d2c8ce;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+header .menu .boton :hover {
+  background: #1e8278;
+  color: #d2c8ce;
+  transition: 0.4s;
+}
+
+header .menu .boton :active {
+  background: #010605;
+  color: #ffffff;
+}
+
+#menu_desplegable {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+#menu_desplegable img {
+  border-radius: 50%;
+}
+
+#hidden{
+  display: none;
+}
+
+#icono_menu {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.lista_desplegable {
+  width: 100%;
+}
+
+ol{
+  display: none;
+}
+
+#menu:checked  ~ ol{
+  display:block;
+}
+
+#menu {
+  display: none;
+ }
+
+.label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  color: #fff;
+}
+
+ol li {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid #000000;
+}
+
+ol li:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+ol .li {
+  cursor: pointer;
+}
+
+ol li:hover {
+  cursor: pointer;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #2cf9e4;
+  font-weight: bolder;
+}
+
+ol li a:hover {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+
+ol .li a {
+  text-decoration: none;
+  color: #e2d2b0;
+}
+
+ol .li a:hover {
+  text-decoration: none;
+  color: #0b5850;
+}
+
+/* INDEX */
+
+.body{
+  background-color: #080808;
+}
+
+#container-index{
+  background: url(../Assets/images/background_index.jpg) center;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo_index {
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+#encabezado {
+  text-align: justify;
+  font-size: 2rem;
+  padding: 50px 200px;
+}
+
+#boton_index {
+  margin: 5px 0 100px 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #26ab9e;
+  width: fit-content;
+  text-decoration: none;
+}
+
+#boton_index:hover {
+  background-color: #b4f8f1;
+}
+
+#boton_index a {
+  color: #ffffff;
+}
+
+#boton_index a:hover {
+  color: #080808;
+}
+
+h2{
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(201, 191, 191);
+  padding: 20px;
+  margin: 20px; 
+}
+
+#history{
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(201, 191, 191);
+  padding: 10px;
+}
+
+.container-mision{
+  color: rgb(155, 140, 140);
+  font-weight: bolder;
+  padding-right: 200px;
+  padding: 50px;
+}
+ 
+.img-mision{
+  width: 40%; 
+  margin: 0 0 5% 30%;
+}
+
+.container-historia{
+  color: rgb(155, 140, 140);
+  font-weight: bolder;
+  padding: 50px;
+}
+
+.container-contenido {
+  padding: 20px;
+}
+
+.productos{
+  width: 100%;
+  padding: 50px 0 50px 50px;
+}
+
+.productos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;    
+}
+
+.productos li:hover{
+  border-color: #3d2222;
+}
+
+.productos li:active{
+  border-color: #088c19;
+}
+
+.productos h4{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h4{
+  font-size: 33px;
+}
+
+.productos li img {
+  width: 100%;
+}
+
+.producto-descripcion{
+  font-size: 18px;
+}
+
+.producto-año{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+.text{
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(155, 140, 140);
+  padding: 0 10px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+a {
+  color: #1e8278;
+}
+
+.container-video{
+  margin: 20px auto;
+  left:20%;
+  width: 100%;
+  height: 500px;
+  border: 0px;
+ }
+
+/*CATALOGO*/
+
+#inicio_catalogo {
+  height: 80vh;
+  background: url(../Assets/images/background_catalogo.jpg) center ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo_catalogo {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.contenedor2{
+ max-width: 1200px;
+ padding: 50px;
+ margin: auto;
+}
+
+/* SECCION CONTENEDOR DE ITEMS */
+
+.contenedor2 .contenedor-items{
+ margin-top: 30px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ grid-gap:30px;
+ grid-row-gap: 30px;
+ /* width: 60%; */
+ width: 100%;
+ transition: .3s;
+}
+
+.contenedor2 .contenedor-items .item{
+ max-width: 200px;
+ margin: auto;
+ border: 1px solid #666;
+ border-radius: 10px;
+ padding: 20px;
+ transition: .3s;
+}
+
+.contenedor2 .contenedor-items .item .img-item{
+ width: 100%;
+}
+
+.contenedor2 .contenedor-items .item:hover{
+ box-shadow: 0 0 10px #666;
+}
+
+.contenedor2 .contenedor-items .item .titulo-item{
+ display: block;
+ font-weight: bold;
+ text-align: center;
+ text-transform: uppercase;
+ color: #0b5850;
+}
+
+.contenedor2 .contenedor-items .item .precio-item{
+ display: block;
+ text-align: center;
+ font-weight: bold;
+ font-size: 22px;
+ color: #d2c8ce;
+}
+
+.contenedor2 .contenedor-items .item .boton-item{
+ display: block;
+ margin: 10px auto;
+ border: none;
+ background-color: black;
+ color: #fff;
+ padding: 5px 15px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+/* EN CONSTRUCCION */
+
+#construccion{
+  height: 100vh;
+  background-image: url("../Assets/images/enconstruccion.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* EVENTOS */
+
+.header_eventos {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#main_eventos {
+  background: #000000;
+  width: 100%;
+  text-align: center;
+}
+
+#inicio {
+  background: url(../Assets/images/background.jpg) center no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+  width: 100%;
+}
+
+#slash img {
+  left: 25%;
+}
+
+#buscar_eventos{
+  padding-top: 80px;
+}
+
+#buscar_eventos .input{
+  width:450px;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.animacion{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+  -webkit-animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes animacion {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#eventos {
+  background: url(../Assets/images/background2.jpg) center;
+  padding: 50px 0;
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo titulo"
+  "main main main main"
+  "headliners headliners headliners headliners"
+  "headliner1 headliner1 headliner2 headliner2"
+  "headliner3 headliner3 headliner4 headliner4"
+  "conciertos conciertos conciertos conciertos"
+  "concierto1 concierto2 concierto3 concierto4"
+  "teatros teatros teatros teatros"
+  "teatro1 teatro2 teatro3 teatro4"
+  "bares bares bares bares"
+  "bar1 bar2 bar3 bar4"
+  ;
+}
+
+#titulo_main {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  grid-area: titulo;
+  margin-top: 20px;
+}
+
+#main_event {
+  margin-top: 20px;
+  text-align: center;
+  grid-area: main;
+}
+
+#headliners {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 100px 0;
+  grid-area: headliners;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#headliner1 {
+  grid-area: headliner1;
+}
+
+h3{
+  color: #ffffff;
+}
+
+.titulo_bar{ 
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+}
+
+#headliner2 {
+  grid-area: headliner2
+}
+
+#headliner3 {
+  grid-area: headliner3;
+  padding-top: 70px;
+}
+
+#headliner4 {
+  grid-area: headliner4;
+  padding-top: 70px;
+}
+
+#conciertos {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 100px 0;
+  grid-area: conciertos;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#concierto1 {
+  grid-area: concierto1;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+#concierto2 {
+  grid-area: concierto2;
+  padding-bottom: 20px;
+}
+
+#concierto3 {
+  grid-area: concierto3;
+  padding-bottom: 20px;
+}
+
+#concierto4 {
+  grid-area: concierto4;
+  padding-bottom: 20px;
+}
+
+#teatros {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 100px 0;
+  grid-area: teatros;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#teatro1 {
+  grid-area: teatro1;
+  padding-bottom: 20px;
+}
+
+#teatro2 {
+  grid-area: teatro2;
+  padding-bottom: 20px;
+}
+
+#teatro3 {
+  grid-area: teatro3;
+  padding-bottom: 20px;
+}
+
+#teatro4 {
+  grid-area: teatro4;
+  padding-bottom: 20px;
+}
+
+#bares {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 100px 0;
+  grid-area: bares;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#bar1 {
+  grid-area: bar1;
+  padding-bottom: 20px;
+}
+
+#bar2 {
+  grid-area: bar2;
+  padding-bottom: 20px;
+}
+
+#bar3 {
+  grid-area: bar3;
+  padding-bottom: 20px;
+}
+
+#bar4 {
+  grid-area: bar4;
+  padding-bottom: 20px;
+}
+
+.boton_ticket {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.boton_ticket a {
+  background: #909090;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.boton_ticket a:hover {
+  background: #f5f3f3;
+  cursor: pointer;
+}
+
+/* CONTACTO */
+
+#main_contacto {
+  padding: 100px 0;
+}
+ 
+.container {
+  display: flex;
+  width: 65%; /* Ajusta el ancho*/
+  margin: 0 auto; /* Centra */
+  max-height: 800px;
+  padding-top: 200px;
+}
+
+.form-container {
+  flex: 2; /* 2 tercios */
+  padding-right: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+.form-image {
+  flex: 1; /* 1 tercio */
+  min-width: 180px;
+}
+
+.form-image img {
+  width: 100%; /* para que la imagen ocupe todo el cont. */
+  max-height: 700px;
+  max-width: 200px;
+  display: block; /* Evita espacios en blanco abajo de la imagen */
+}
+
+/* estilo específico del form */
+input[type=text],
+input[type=email],
+input[type=file],
+select,
+textarea {
+  width: 100%; /* Todo el ancho */
+  height: 25%;
+  padding: 12px; /* padding */ 
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  resize: vertical /* permite hacer resize vertical (no horizontal) */
+}
+
+.radio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* para que quede en columnas */
+  gap: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-input {
+  margin-right: 5px;
+}
+
+/* estilo para el botón submit */
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* transición */
+}
+
+/* cambio de color en botón submit */
+input[type=button]:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* un poco de zoom al hacer hover */
+}
+
+/* color y padding */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content p {
+  width: 500px;
+  height: 140px;
+  color: black;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popup-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-close {
+  cursor: pointer; /*pone la manito */
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #e2d2b0;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+footer .footer_datos .datos li {
+  list-style: none;
+}
+
+footer .footer_datos .datos li a {
+  text-decoration: none;
+  color: #080808;
+  font-weight: bold;
+}
+
+footer .footer_datos .datos li :hover {
+  color: #a8a1a5;
+}
+
+footer .redes a :hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1600px) and (min-width:1025px) {
+  
+  #main_event img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #headliner1 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #headliner2 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #headliner3 img {
+    width: 55%;
+    height: 85%
+  }
+
+  #headliner4 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto1 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto2 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto3 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto4 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro1 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro2 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro3 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro4 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #bar1 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar2 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar3 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar4 img {
+    width: 55%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width:1024px) and (min-width:769px){ 
+
+  #buscar_eventos {
+    width: 70%;
+    height: 70%;
+  }
+
+  #buscar_eventos .input{
+    width:350px;
+  }
+
+  #main_event img {
+    width: 80%;
+  }
+
+  #headliner1 img {
+    width: 70%;
+  }
+
+  #headliner2 img {
+    width: 70%;
+  }
+
+  #headliner3 img {
+    width: 70%;
+  }
+
+  #headliner4 img {
+    width: 70%;
+  }
+
+  #concierto1 img {
+    width: 60%;
+  }
+
+  #concierto2 img {
+    width: 60%;
+  }
+
+  #concierto3 img {
+    width: 60%;
+  }
+
+  #concierto4 img {
+    width: 60%;
+  }
+
+  #teatro1 img {
+    width: 60%;
+  }
+
+  #teatro2 img {
+    width: 60%;
+  }
+
+  #teatro3 img {
+    width: 60%;
+  }
+
+  #teatro4 img {
+    width: 60%;
+  }
+
+  #bar1 img {
+    width: 60%;
+  }
+
+  #bar2 img {
+    width: 60%;
+  }
+
+  #bar3 img {
+    width: 60%;
+  }
+
+  #bar4 img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  /* CATALOGO */
+
+  .contenedor .contenedor-items {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    justify-content: center; 
+  }
+ 
+  .carrito {
+    width: 90%; 
+    margin: 30px auto; 
+    margin-top: 50px; 
+  }
+ }
+
+@media screen and (max-width:768px){
+  
+  #hidden {
+    display: initial;
+  }
+
+  .contenedor {
+    display:none;
+  }
+
+  #slash {
+    display: none;
+  }
+
+  #buscar_eventos {
+    padding: 160px 0;
+  }
+
+  #eventos {
+    grid-template-areas: 
+  "titulo titulo"
+  "main main "
+  "headliners headliners"
+  "headliner1 headliner1"
+  "headliner2 headliner2"
+  "headliner3 headliner3"
+  "headliner4 headliner4"
+  "conciertos conciertos"
+  "concierto1 concierto2"
+  "concierto3 concierto4"
+  "teatros teatros"
+  "teatro1 teatro2"
+  "teatro3 teatro4"
+  "bares bares"
+  "bar1 bar2"
+  "bar3 bar4"
+  }
+
+  #main_event img {
+    width: 80%;
+    height: 80%;
+  }
+
+  #headliner2 {
+    margin-top: 120px;
+  }
+
+  #headliner3 {
+    margin-top: 50px;
+  }
+
+  #headliner4 {
+    margin-top: 50px;
+  }
+
+  #headliner1 img {
+    width: 60%;
+    height: 80%;
+  }
+
+  #headliner2 img {
+    width: 60%;
+    height: 80%;
+  }
+
+  #headliner3 img {
+    width: 60%;
+    height: 80%;
+  }
+
+  #headliner4 img {
+    width: 60%;
+    height: 80%;
+  }
+
+  #concierto1 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto2 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #concierto3 img {
+    width: 55%;
+    height: 85%
+  }
+
+  #concierto4 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro1 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro2 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro3 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #teatro4 img {
+    width: 55%;
+    height: 85%;
+  }
+
+  #bar1 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar2 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar3 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  #bar4 img {
+    width: 55%;
+    height: 70%;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    padding: 20px 20px;
+  }
+
+  /*RESPONSIVE INDEX*/
+
+  #container-index{
+    height: auto;
+    padding-top: 50px;
+  }
+
+  #titulo_index{
+    font-size: 2rem;
+    padding-top: 50px;
+  }
+
+  .animacion{
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+
+  #encabezado{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #boton_index{
+    margin: 10px 10px 100px 10px;
+    padding: 5px;
+  }
+  
+  .container-mision{
+    padding: 20px;
+  }
+
+  .text-mision{
+    width: 100%;
+    text-align: justify;
+  }
+
+  .container-historia{
+    padding: 20px; 
+  }
+
+  .text-history{
+    width: 100%;
+    text-align: justify;
+  }
+
+  .productos{
+    width: 70%;
+    padding: 20px 0 20px 100px;   
+    margin-left: 60px;
+  }
+
+  .productos h4{
+    font-size: 23px;
+  }
+
+  .productos li{
+    width: 85%;
+    margin: 0 2.5%;
+    padding: 20px 10px;
+  }
+
+  .productos li :hover{
+    border-color: #088c19;
+  }
+
+  #img-galeria{
+    font-size: 25px;
+  }
+ 
+  .producto-descripcion{
+    font-size: 16px;
+  }
+  .producto-año{
+    font-size: 18px;
+  }
+
+  .texto-gardel{
+    padding: 0 5px;
+  }
+
+  .container-video{
+    left: 18%;
+  }
+}
+
+/* para ancho inferior o igual a 600px */
+@media (max-width: 600px) {
+
+  /* INDEX */
+
+  .productos{
+    width: 70%;
+    padding: 20px 0 20px 60px;  
+    margin-left: 60px; 
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .event2 {
+    font-size: small;
+  }
+
+  #titulo_main{
+    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    font-size: 1.5rem;
+  }
+
+  #headliners {
+    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    font-size: 1.5rem;
+  }
+
+  #conciertos {
+    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    font-size: 1.5rem;
+  }
+
+  #teatros {
+    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    font-size: 1.5rem;
+  }
+
+  #bares {
+    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    font-size: 1.5rem;
+  }
+
+  .form-image {
+      display: none; /* Oculta el contenedor de la imagen */
+  }
+
+  .titulo_footer a{
+    display: none;
+  }
+}
+
+@media screen and (max-width:456px) and (min-width:426px){
+  
+  /* INDEX */
+
+  .productos li{
+    width: 90%;
+    margin: 0.5%;
+    padding: 5% 5%;
+  }
+
+  .productos{
+    padding: 20px 0 20px 20px;
+  }
+
+  #img-galeria{
+    font-size: 5vw;
+  }
+
+  .producto-descripcion{
+    font-size: 14px;
+  }
+
+  .producto-año{
+    font-size: 14px;
+    margin-top: 2vw;
+  }
+}
+
+  /* EVENTOS */
+  #buscar_eventos .input{
+    width: 300px;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .event2 {
+    font-size: smaller;
+  }
+
+  /* FOOTER */
+
+  .redes a img {
+    width: 18%;
+  }
+
+  .footer_datos li a {
+    font-size: 0.8rem;
+  }
+
+
+@media screen and (max-width:425px) and (min-width:321px){
+
+  /* INDEX */
+
+  .productos{
+    width: 70%;
+    padding: 20px 0 20px 5px;   
+  }
+
+  .productos h4 {
+    font-size: 18px;
+  }
+
+  .producto-descripcion{
+    font-size: 11px;
+  }
+
+  .producto-año{
+    font-size: 11px;
+    margin-top: 2vw;
+  }
+
+  /* EVENTOS */
+
+  #buscar_eventos .input{
+    width:250px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .event2 {
+    font-size: x-small;
+  }
+
+  .boton_ticket a{
+    font-size: small;
+  }
+
+  footer {
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .footer_datos .datos li a {
+    font-size: 0.6rem
+  }
+
+  .redes {
+    padding-left: 30px;
+  }
+
+  .redes a img {
+    width: 15%;
+  }
+
+  .footer_datos li {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width:320px){
+
+  /* INDEX */
+
+  .productos{
+    padding: 20px 0; 
+  }
+
+  .productos h4 {
+    font-size: 14px;
+  }
+
+  .producto-descripcion{
+    font-size: 10px;
+  }
+
+  .producto-año{
+    font-size: 10px;
+    margin-top: 2vw;
+  }
+
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  /* EVENTOS */
+
+ .event2 {
+  font-size: x-small;
+ }
+  
+#buscar_eventos .input {
+  width: 200px;
+  font-size: 1rem;
+}
+
+.boton_ticket a{
+  font-size: x-small;
+}
+
+  /* FOOTER */
+
+.redes a img {
+  width: 15%;
+}
+
+footer {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer_datos .datos li a {
+  font-size: 0.5rem;
+ }
+}
