@@ -3,9 +3,9 @@
 function validateForm() {
 
     console.log("Validating form...") //para debug
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("mensaje").value;
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("mensaje").value;
 
     if (name == "") {
         alert("Ingrese su nombre.");
@@ -13,7 +13,7 @@ function validateForm() {
     }
     
     // Validación de correo electrónico
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (email == "") {
         alert("Ingrese su email.");
@@ -41,15 +41,15 @@ function validateForm() {
 }
 
 function showPopup(nombreUsuario) {
-    var popup = document.getElementById("popup");
-    var popupTitle = document.querySelector(".popup-title");
-    var popupMessage = document.querySelector(".popup-message");
+    let popup = document.getElementById("popup");
+    let popupTitle = document.querySelector(".popup-title");
+    let popupMessage = document.querySelector(".popup-message");
     popupTitle.textContent = "¡Hola, " + nombreUsuario + "!";
     popupMessage.textContent = "Gracias por completar el formulario de contacto.\n Nos pondremos en contacto para responderte...";
     popup.style.display = "block";
 }
 
 function closePopup() {
-    var popup = document.getElementById("popup");
+    let popup = document.getElementById("popup");
     popup.style.display = "none";
 }
